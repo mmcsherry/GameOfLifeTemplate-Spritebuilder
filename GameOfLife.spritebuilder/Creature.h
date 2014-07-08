@@ -1,5 +1,3 @@
-
-
 #import "CCSprite.h"
 
 @interface Creature : CCSprite
