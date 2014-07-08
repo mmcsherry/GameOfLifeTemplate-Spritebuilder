@@ -9,16 +9,16 @@ static const int GRID_COLUMNS = 10;
     NSMutableArray *_gridArray;
     float _cellWidth;
     float _cellHeight;
+}
+
+- (void)onEnter
+{
+    [super onEnter];
     
-    - (void)onEnter
-    {
-        [super onEnter];
-        
-        [self setupGrid];
-        
-        // accept touches on the grid
-        self.userInteractionEnabled = YES;
-    }
+    [self setupGrid];
+    
+    // accept touches on the grid
+    self.userInteractionEnabled = YES;
 }
 
 - (void)setupGrid
